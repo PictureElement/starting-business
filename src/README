@@ -1,0 +1,36 @@
+1. Install bootstrap source as node package. Install sass as command line tool:
+
+npm init
+npm install bootstrap --save
+sudo apt-get install ruby-full
+sudo gem install sass
+
+2. To run Sass from the command line, just use:
+
+sass input.scss output.css
+
+3. You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
+
+project/
+    node_modules/
+        bootstrap/
+    scss/
+        main.scss
+    css/
+        main.css
+    index.html
+
+$ cd project/
+$ sass --watch scss/main.scss:css/main.css
+
+4. Install SCSS package in Sublime 3 (CSS and SCSS highlighter)
+
+ctrl+shift+p
+Package Control: Install Package
+search for 'SCSS'
+click 'SCSS' 
+ctrl+shift+p
+search for 'SCSS'
+click 'Syntax: SCSS'
+
+5. You will find the complete list of Bootstrap’s variables in scss/_variables.scss.

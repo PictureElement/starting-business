@@ -1,0 +1,54 @@
+// Your variable overrides
+$theme-colors: (
+  "custom-red-dark": #8f101c,
+  "custom-blue-dark": #262262,
+  "custom-red": #be1e2d,
+  "custom-light": #e6e7e8,
+  "custom-olive": #bbaa28,
+  "custom-white": #ffffff,
+  "custom-dark": #231f20
+);
+
+$body-color: #fff;
+
+// Include all of Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// NunitoSans-Light
+@font-face {
+  font-family: "NunitoSans-Light";
+  src: url("../fonts/NunitoSans-Light.ttf");
+}
+
+// NunitoSans-LightItalic
+@font-face {
+  font-family: "NunitoSans-LightItalic";
+  src: url("../fonts/NunitoSans-LightItalic.ttf");
+}
+
+// NunitoSans-Regular
+@font-face {
+  font-family: "NunitoSans-Regular";
+  src: url("../fonts/NunitoSans-Regular.ttf");
+}
+
+// NunitoSans-Bold
+@font-face {
+  font-family: "NunitoSans-Bold";
+  src: url("../fonts/NunitoSans-Bold.ttf");
+}
+
+.video-bg {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+header {
+  background: rgba(190, 30, 45, 0.5);
+}
+
+//font-family: 'Nunito Sans', sans-serif;
