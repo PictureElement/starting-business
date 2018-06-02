@@ -15,6 +15,14 @@
     <!-- HEADER -->
     <header>
 
+      <!-- MEDIA -->
+      <div class="header-media">
+        <!-- VIDEO -->
+        <video autoplay muted loop class="header-video">
+          <source src="media/video.mp4" type="video/mp4">
+        </video>
+      </div>
+
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-red-translucent">
         <div class="container">
@@ -53,52 +61,52 @@
           </div>
         </div>
       </nav>
-     
-      <!-- MAIN TITLE -->
-      <div class="main-title">
+
+      <!-- TITLE -->
+      <div class="header-title">
         <h1 class="font700"><small class="font300">Helping Businesses</small><br>Get Up & Running</h1>
       </div>
 
       <!-- SERVICES -->
-      <div class="container services">
+      <div class="container header-services">
         <div class="row">
-          <div class="service col-2 offset-1 text-center">
-            <div class="service-icon border rounded-circle">
+          <div class="col-2 offset-1 text-center">
+            <div class="header-service-icon border rounded-circle">
               <img src="media/company-formation.svg" alt="company formation">
             </div>
-            <div class="service-description mt-3">
+            <div class="mt-3">
               Company Formation
             </div>
           </div>
-          <div class="service col-2 text-center">
-            <div class="service-icon border rounded-circle bg-red border-0">
+          <div class="col-2 text-center">
+            <div class="header-service-icon border rounded-circle bg-red border-0">
               <img src="media/personal-account.svg" alt="personal account">
             </div>
-            <div class="service-description mt-3 text-red">
+            <div class="mt-3 text-red">
               Personal Account
             </div>
           </div>
-          <div class="service col-2 text-center">
-            <div class="service-icon border rounded-circle">
+          <div class="col-2 text-center">
+            <div class="header-service-icon border rounded-circle">
               <img src="media/coorporate-account.svg" alt="coorporate account">
             </div>
-            <div class="service-description mt-3">
+            <div class="mt-3">
               Coorporate Account
             </div>
           </div>
-          <div class="service col-2 text-center">
-            <div class="service-icon border rounded-circle">
+          <div class="col-2 text-center">
+            <div class="header-service-icon border rounded-circle">
               <img src="media/trademark-registration.svg" alt="trademark registration">
             </div>
-            <div class="service-description mt-3">
+            <div class="mt-3">
               Trademark Registration
             </div>
           </div>
-          <div class="service col-2 text-center">
-            <div class="service-icon border rounded-circle">
+          <div class="col-2 text-center">
+            <div class="header-service-icon border rounded-circle">
               <img src="media/asset-protection.svg" alt="asset protection">
             </div>
-            <div class="service-description mt-3">
+            <div class="mt-3">
               Asset Protection
             </div>
           </div>
@@ -106,12 +114,6 @@
       </div>
 
     </header>
-
-    <!-- VIDEO BACKGROUND -->
-    <video autoplay muted loop class="video-bg">
-      <source src="media/video.mp4" type="video/mp4">
-      <h1>Hello</h1>
-    </video>
 
     <section class="about container-fluid text-center">
       <div class="container">
@@ -130,7 +132,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <section class="col-6 consultancy bg-red text-center">
+        <section class="consultancy col-sm-6 bg-red text-center">
           <div class="container">
             <div class="about-icon mb-3">
               <img src="media/request-consultancy.svg" alt="request consultancy">
@@ -144,7 +146,7 @@
             <button type="button" class="btn btn-outline-light">Get Started</button>
           </div>
         </section>
-        <section class="col-6 how-it-works bg-blue-dark text-center">
+        <section class="how-it-works col-sm-6 bg-blue-dark text-center">
           <div class="container">
             <div class="about-icon mb-3">
               <img src="media/how-it-works.svg" alt="how it works">
@@ -161,7 +163,80 @@
       </div>
     </div>
 
-    
+    <section class="special-offers container-fluid bg-light">
+      <div class="container">
+        <div class="special-offers-btn text-center">
+          <a href="#" class="btn btn-olive text-blue-dark font700">SPECIAL OFFERS</a>
+        </div>
+        <!-- CAROUSEL -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- CARD DECK -->
+              <div class="card-deck">
+                <div class="card">
+                  <div class="card-body text-blue-dark">
+                    <h4 class="card-title font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h4>
+                    <p class="card-text">
+                      Company with lowest EU corporate tax 12.5% &amp; zero tax on dividends.<br> Account in Switzerland for daily transactions: complete banking services.
+                    </p>
+                  </div>
+                  <div class="card-price bg-red font700">
+                    PRICE NOW $1,290
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="card-btn btn btn-outline-blue-dark">Learn more</a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body text-blue-dark">
+                    <h4 class="card-title font700">Belize Company &amp; Free Account with Choice Bank</h4>
+                    <p class="card-text">
+                      Quick &amp; easy company formation. Tax exempted IBC with high level of privacy. International account with safe &amp; secure Choice Bank.
+                    </p>
+                  </div>
+                  <div class="card-price bg-red">
+                    PRICE NOW $750
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="card-btn btn btn-outline-blue-dark"><small>Learn more</small></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-body text-blue-dark">
+                    <h4 class="card-title font700">Marshall Islands Company + Bank Account</h4>
+                    <p class="card-text">
+                      Set up your offshore company and FREE corporate bank account with Euro Pacific Bank.
+                    </p>
+                  </div>
+                  <div class="card-price bg-red">
+                    PRICE NOW $990
+                  </div>
+                  <div class="card-footer">
+                    <a href="#" class="card-btn btn btn-outline-blue-dark"><small>Learn more</small></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="templates container-fluid text-center">
+      <div class="container">
+        <div class="templates-icon mb-3">
+          <img src="media/document-templates.svg" alt="document templates">
+        </div>
+        <div class="templates-heading mb-4">
+          <h2>Document Templates</h2>
+        </div>
+        <div class="templates-description mb-5">
+          <h4>Over 1,000 Downloadable Business &amp; Legal Forms</h4>
+        </div>
+        <button type="button" class="btn btn-outline-light">Learn More</button>
+      </div>
+    </section>    
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

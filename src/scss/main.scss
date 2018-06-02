@@ -49,6 +49,19 @@ $navbar-padding-y: 1.50rem;
 $input-btn-padding-y: .5rem;
 $input-btn-padding-x: 4rem;
 
+// Grid container
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1400px
+);
+
+// Cards
+$card-border-radius: 20px;
+$card-deck-margin: 0.5rem;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
 
 /*
  * Include all of Bootstrap
@@ -77,51 +90,61 @@ $input-btn-padding-x: 4rem;
 }
 
 /*
- * Video background
- */
-
-.video-bg {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: relative;
-  z-index: -100;
-}
-
-/*
  * Header 
  */
 
-header {
-  .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-  }
-
-  .main-title {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    font-size: 5rem;
-  }
-
-  .services {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-.service-icon {
+header {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-media {
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.navbar-brand {
+  padding-right: 10rem;
+}
+
+.header-title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+}
+
+.header-services {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-service-icon {
   width: 70px;
   height: 70px;
   margin: 0 auto;
@@ -139,6 +162,44 @@ header {
   padding: 6rem 0;
 }
 
+/*
+ * Consultancy & How it works
+ */
+
 .consultancy, .how-it-works {
+  padding: 6rem 0;
+}
+
+/*
+ * Special offers
+ */
+
+.special-offers {
+  padding: 6rem 0;
+}
+
+.special-offers-btn {
+  margin-bottom: 6rem;
+}
+
+.special-offers-btn a {
+ padding: 0.75rem 6rem;
+ border-radius: 20px;
+}
+
+.card-price {
+  padding: 1.5rem 0 1.5rem 1.25rem;
+}
+
+.card-btn {
+  margin-left: 0;
+}
+
+/*
+ * Templates
+ */
+
+.templates {
+  background-color: black;
   padding: 6rem 0;
 }
