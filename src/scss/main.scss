@@ -41,7 +41,13 @@ $theme-colors: (
 
 $body-color: #fff;
 $font-family-sans-serif: 'NunitoSans-Regular', sans-serif;
+
+// Navbar
 $navbar-padding-y: 1.50rem;
+
+// Buttons
+$input-btn-padding-y: .5rem;
+$input-btn-padding-x: 4rem;
 
 
 /*
@@ -115,15 +121,24 @@ header {
   }
 }
 
-.service {
-  
-  .service-icon {
-    width: 70px;
-    height: 70px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.service-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/*
+ * About
+ */
+
+.about {
+  background-color: black;
+  padding: 6rem 0;
+}
+
+.consultancy, .how-it-works {
+  padding: 6rem 0;
 }
