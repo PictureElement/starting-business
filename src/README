@@ -1,4 +1,13 @@
-1. Install bootstrap source as node package. Install sass as command line tool:
+/************************************************************
+ * Author: Marios Sofokleous (PictureElement)               *
+ * Date: 01.06.2018                                         *
+ * GitHub: https://github.com/PictureElement                *
+ * Portfolio: https://pictureelement.github.io/portfolio-2/ *
+ ************************************************************/
+
+Theming Bootstrap
+-----------------
+1. Install Bootstrap source as node package. Install sass as command line tool:
 
 npm init
 npm install bootstrap --save
@@ -23,8 +32,10 @@ project/
 $ cd project/
 $ sass --watch scss/main.scss:css/main.css
 
-4. Install SCSS package in Sublime 3 (CSS and SCSS highlighter)
+4. You will find the complete list of Bootstrap’s variables in scss/_variables.scss.
 
+Sublime 3 "SCSS" package (SCSS highlighter)
+-------------------------------------------
 ctrl+shift+p
 Package Control: Install Package
 search for 'SCSS'
@@ -33,11 +44,8 @@ ctrl+shift+p
 search for 'SCSS'
 click 'Syntax: SCSS'
 
-5. You will find the complete list of Bootstrap’s variables in scss/_variables.scss.
-
-Exporting an object as svg from inkscape
+Exporting an object as svg from Inkscape
 ----------------------------------------
-
 a) Select the object(s) to export
 b) Open the document properties window (Ctrl+Shift+D)
 c) Select "Resize page to drawing or selection"
@@ -46,7 +54,6 @@ e) Select Optimized SVG as the format if you want to use it on the web
 
 <use> SVG element
 -----------------
-
 The <use> element takes nodes from within the SVG document, and duplicates them somewhere else.
 
 <svg><use href="sprite.svg#nodeID"></use></svg>
@@ -57,7 +64,6 @@ documents themselves but it bloats the page cache.
 
 For sprite.svg
 --------------
-
 <svg><use href="media/sprite.svg#XMLID_2_"></use></svg> <!-- request consultancy -->
 <svg><use href="media/sprite.svg#XMLID_3_"></use></svg> <!-- how it works -->
 <svg><use href="media/sprite.svg#XMLID_2161_"></use></svg> <!-- document templates -->
@@ -68,9 +74,13 @@ For sprite.svg
 <svg><use href="media/sprite.svg#XMLID_5345_"></use></svg> <!-- asset protection -->
 <svg><use href="media/sprite.svg#XMLID_5108_"></use></svg> <!-- arrow up -->
 
-* I couldn't locate the other icons so I had to export each and every icon from sprite.svg with Inkscape.
+* I couldn't locate the other icons so I had to export each and every icon from sprite.svg manually with Inkscape.
 
 Descriptive names of color shades
 ---------------------------------
 https://digitalsynopsis.com/design/color-thesaurus-correct-names-of-shades/
+
+Tinted Images with Multiple Backgrounds
+---------------------------------------
+https://css-tricks.com/tinted-images-multiple-backgrounds/
 
