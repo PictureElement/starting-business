@@ -34,3 +34,40 @@ search for 'SCSS'
 click 'Syntax: SCSS'
 
 5. You will find the complete list of Bootstrap’s variables in scss/_variables.scss.
+
+Exporting an object as svg from inkscape
+----------------------------------------
+
+a) Select the object(s) to export
+b) Open the document properties window (Ctrl+Shift+D)
+c) Select "Resize page to drawing or selection"
+d) File > Save As Copy...
+e) Select Optimized SVG as the format if you want to use it on the web
+
+<use> SVG element
+-----------------
+
+The <use> element takes nodes from within the SVG document, and duplicates them somewhere else.
+
+<svg><use href="sprite.svg#nodeID"></use></svg>
+
+For security reasons, some browsers could apply a same-origin policy on use elements and could refuse to 
+load a cross-origin URI within the href attribute. We can ofcourse include the SVG sprite in all the HTML 
+documents themselves but it bloats the page cache.
+
+For sprite.svg
+--------------
+
+<svg><use href="media/sprite.svg#XMLID_2_"></use></svg> <!-- request consultancy -->
+<svg><use href="media/sprite.svg#XMLID_3_"></use></svg> <!-- how it works -->
+<svg><use href="media/sprite.svg#XMLID_2161_"></use></svg> <!-- document templates -->
+<svg><use href="media/sprite.svg#XMLID_5677_"></use></svg> <!-- personal account -->
+<svg><use href="media/sprite.svg#XMLID_5513_"></use></svg> <!-- company formation -->
+<svg><use href="media/sprite.svg#XMLID_5368_"></use></svg> <!-- coorporate account -->
+<svg><use href="media/sprite.svg#XMLID_5351_"></use></svg> <!-- trademark registration -->
+<svg><use href="media/sprite.svg#XMLID_5345_"></use></svg> <!-- asset protection -->
+<svg><use href="media/sprite.svg#XMLID_5108_"></use></svg> <!-- arrow up -->
+
+* I couldn't locate the other icons so I had to export each and every icon from sprite.svg with Inkscape.
+
+

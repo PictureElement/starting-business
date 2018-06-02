@@ -14,19 +14,19 @@
     <!-- VIDEO BACKGROUND -->
     <video autoplay muted loop class="video-bg">
       <source src="media/video.mp4" type="video/mp4">
+      <h1>Hello</h1>
     </video>
 
     <!-- HEADER -->
     <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-red-translucent">
+        <div class="container">
           <a class="navbar-brand" href="#">
             <img src="media/sb-logo-header.svg" alt="SB logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item dropdown">
@@ -53,14 +53,67 @@
                 <a class="nav-link" href="#">FAQ</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
           </div>
-        </nav>
+        </div>
+      </nav>
+
+      <div class="main-title">
+        <h1 class="font700"><small class="font300">Helping Businesses</small><br>Get Up & Running</h1>
       </div>
+
+      <div class="services container">
+        <div class="row">
+
+          <div class="service col-2 offset-1 text-center">
+            <div class="service-icon border rounded-circle">
+              <img src="media/company-formation.svg" alt="company formation">
+            </div>
+            <div class="service-description mt-3">
+              Company Formation
+            </div>
+          </div>
+          <div class="service col-2 text-center">
+            <div class="service-icon border rounded-circle bg-red border-0">
+              <img src="media/personal-account.svg" alt="personal account">
+            </div>
+            <div class="service-description mt-3 text-red">
+              Personal Account
+            </div>
+          </div>
+          <div class="service col-2 text-center">
+            <div class="service-icon border rounded-circle">
+              <img src="media/coorporate-account.svg" alt="coorporate account">
+            </div>
+            <div class="service-description mt-3">
+              Coorporate Account
+            </div>
+          </div>
+          <div class="service col-2 text-center">
+            <div class="service-icon border rounded-circle">
+              <img src="media/trademark-registration.svg" alt="trademark registration">
+            </div>
+            <div class="service-description mt-3">
+              Trademark Registration
+            </div>
+          </div>
+          <div class="service col-2 text-center">
+            <div class="service-icon border rounded-circle">
+              <img src="media/asset-protection.svg" alt="asset protection">
+            </div>
+            <div class="service-description mt-3">
+              Asset Protection
+            </div>
+          </div>
+
+        </div>
+      </div>
+          
+
+      
     </header>
+
+    
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
