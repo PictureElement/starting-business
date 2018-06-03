@@ -35,15 +35,16 @@
 
 // Colors
 $scarlet: rgb(143,16,28);
-$scarlet-glassy: rgba(143,16,28,0.5);
+$scarlet-glassy: rgba(143,16,28,0.7);
 $navy: rgb(38,34,98);
-$navy-glassy: rgba(38,34,98,0.5);
+$navy-glassy: rgba(38,34,98,0.7);
 $red: rgb(190,30,45);
-$red-glassy: rgba(190,30,45,0.5);
+$red-glassy: rgba(190,30,45,0.7);
 $cloud: rgb(230,231,232);
 $olive: rgb(187,170,40);
 $coal: rgb(35,31,32);
-$coal-glassy: rgba(35,31,32,0.5);
+$coal-glassy: rgba(35,31,32,0.7);
+$snow: rgb(255,255,255);
 
 // Theme colors
 $theme-colors: (
@@ -56,13 +57,18 @@ $theme-colors: (
   "dark-glassy": $coal-glassy,
   "light": $cloud,
   "success": $navy,
-  "success-glassy": $navy-glassy
+  "success-glassy": $navy-glassy,
+  "info": $snow
 );
 
 // Body
 $body-bg: #000;
 $body-color: #fff;
+
+// Fonts
 $font-family-sans-serif: 'NunitoSans-Regular', sans-serif;
+$font-size-base: 1rem;
+$lead-font-size: ($font-size-base * 1.75);
 
 // Navbar
 $navbar-padding-y: 1.5rem;
@@ -204,37 +210,65 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
  * About
  */
 
 .about {
-  background-color: black;
   padding: 6rem 0;
+  // Background image with color overlay
+  background: linear-gradient(0deg, map-get($theme-colors, danger-glassy), map-get($theme-colors, danger-glassy)), url('../media/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 10px solid map-get($theme-colors, info);
 }
 
 /*
- * Consultancy & How it works
+ * Consultancy
  */
 
-.consultancy, .how-it-works {
-  padding: 6rem 0;
+.consultancy {
+  border-top: 10px solid map-get($theme-colors, info);
+  border-right: 5px solid map-get($theme-colors, info);
+  padding: 5.7rem 0;
+  // Background image with color overlay
+  background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/consultancy.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    max-width: 42em;
+  }
 }
+
+/*
+ * How it works
+ */
+
+.how-it-works {
+  border-top: 10px solid map-get($theme-colors, info);
+  border-left: 5px solid map-get($theme-colors, info);
+  padding: 5.7rem 0;
+  // Background image with color overlay
+  background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/how-it-works.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    max-width: 42em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * Special offers
