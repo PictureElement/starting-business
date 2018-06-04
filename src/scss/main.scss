@@ -240,15 +240,16 @@ header {
  */
 
 .consultancy {
+  border-right: 10px solid map-get($theme-colors, info);
   border-top: 10px solid map-get($theme-colors, info);
-  border-right: 5px solid map-get($theme-colors, info);
   padding: 5.7rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/consultancy.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  .container {
-    max-width: 42em;
+  .card-body, .card-footer {
+    max-width: 690px;
+    margin: 0 auto;
   }
 }
 
@@ -258,14 +259,14 @@ header {
 
 .how-it-works {
   border-top: 10px solid map-get($theme-colors, info);
-  border-left: 5px solid map-get($theme-colors, info);
   padding: 5.7rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/how-it-works.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  .container {
-    max-width: 42em;
+  .card-body, .card-footer {
+    max-width: 690px;
+    margin: 0 auto;
   }
 }
 
@@ -298,9 +299,58 @@ header {
 
 .templates {
   border-top: 10px solid map-get($theme-colors, info);
-  padding: 7.2rem 0;
+  padding: 7.5rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, dark-glassy), map-get($theme-colors, dark-glassy)), url('../media/templates.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+/*
+ * Footer
+ */
+
+footer {
+  padding: 5.4rem 0;
+}
+
+.footer-main {
+  margin-top: 5.4rem;
+}
+
+.footer-discount {
+  border: 1px dashed white;
+  position: relative;
+  img {
+    position: absolute;
+    top: -14px;
+  }
+}
+
+/*
+ * Media queries (Desktop-first approach)
+ */
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .consultancy {
+    border-right: none;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 0.8rem;
+  }
 }

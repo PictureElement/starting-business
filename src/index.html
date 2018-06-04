@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Starting Business</title>
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
     <!-- Bootstrap & Page-specific styles -->
     <link rel="stylesheet" href="css/main.css">
   </head>
@@ -87,7 +87,7 @@
             <div class="header-service-icon border rounded-circle">
               <img src="media/company-formation.svg" alt="company formation">
             </div>
-            <div class="mt-3 header-service-description">
+            <div class="mt-3 header-service-description d-none d-sm-block">
               Company Formation
             </div>
           </div>
@@ -95,7 +95,7 @@
             <div class="header-service-icon border rounded-circle">
               <img src="media/personal-account.svg" alt="personal account">
             </div>
-            <div class="mt-3 header-service-description">
+            <div class="mt-3 header-service-description d-none d-sm-block">
               Personal Account
             </div>
           </div>
@@ -103,7 +103,7 @@
             <div class="header-service-icon border rounded-circle">
               <img src="media/coorporate-account.svg" alt="coorporate account">
             </div>
-            <div class="mt-3 header-service-description">
+            <div class="mt-3 header-service-description d-none d-sm-block">
               Coorporate Account
             </div>
           </div>
@@ -111,7 +111,7 @@
             <div class="header-service-icon border rounded-circle">
               <img src="media/trademark-registration.svg" alt="trademark registration">
             </div>
-            <div class="mt-3 header-service-description">
+            <div class="mt-3 header-service-description d-none d-sm-block">
               Trademark Registration
             </div>
           </div>
@@ -119,7 +119,7 @@
             <div class="header-service-icon border rounded-circle">
               <img src="media/asset-protection.svg" alt="asset protection">
             </div>
-            <div class="mt-3 header-service-description">
+            <div class="mt-3 header-service-description d-none d-sm-block">
               Asset Protection
             </div>
           </div>
@@ -142,37 +142,27 @@
       </div>
     </section>
 
-    <div class="container-fluid">
-      <div class="row">
-        <section class="consultancy col-lg-6 text-center">
-          <div class="container">
-            <div class="about-icon mb-3">
-              <img src="media/request-consultancy.svg" alt="request consultancy">
-            </div>
-            <div class="about-heading">
-              <h3 class="display-2 font300">Request Consultancy</h3>
-            </div>
-            <div class="about-description mb-5">
-              <p class="lead">Speak to one of our expert consultans and receive one-to-one and reliable advice...</p>
-            </div>
-            <button type="button" class="btn btn-outline-info">Get Started</button>
-          </div>
-        </section>
-        <section class="how-it-works col-lg-6 text-center">
-          <div class="container">
-            <div class="about-icon mb-3">
-              <img src="media/how-it-works.svg" alt="how it works">
-            </div>
-            <div class="about-heading">
-              <h3 class="display-2 font300">How it Works</h3>
-            </div>
-            <div class="about-description mb-5">
-              <p class="lead">Learn how we can assist you in getting your business up and running...</p>
-            </div>
-            <button type="button" class="btn btn-outline-info">Learn More</button>
-          </div>
-        </section>
-      </div>
+    <div class="card-group flex-column flex-md-row">
+      <section class="consultancy card text-center bg-primary rounded-0">
+        <div class="card-body py-0">
+          <img class="mb-3" src="media/request-consultancy.svg" alt="request consultancy">
+          <h3 class="card-title display-2 font300 mb-2">Request Consultancy</h3>
+          <p class="card-text lead font300">Speak to one of our expert consultans and receive one-to-one and reliable advice...</p>
+        </div>
+        <div class="card-footer pt-5 pb-0 border-0">
+          <button type="button" class="btn btn-outline-info">Get Started</button>
+        </div>
+      </section>
+      <section class="how-it-works card text-center bg-primary rounded-0">
+        <div class="card-body py-0">
+          <img class="mb-3" src="media/how-it-works.svg" alt="how it works">
+          <h3 class="card-title display-2 font300 mb-2">How it Works</h3>
+          <p class="card-text lead font300">Learn how we can assist you in getting your business up and running...</p>
+        </div>
+        <div class="card-footer pt-5 pb-0 border-0">
+          <button type="button" class="btn btn-outline-info">Learn More</button>
+        </div>
+      </section>
     </div>
 
     <section class="special-offers container-fluid bg-light">
@@ -184,7 +174,7 @@
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card-deck flex-column flex-lg-row">
+              <div class="card-deck flex-column flex-md-row">
                 <div class="card">
                   <div class="card-body text-success">
                     <h4 class="card-title font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h4>
@@ -234,14 +224,6 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
     <section class="templates container-fluid text-center">
       <div class="container">
         <div class="templates-icon mb-3">
@@ -251,11 +233,127 @@
           <h3 class="display-2 font300">Document Templates</h3>
         </div>
         <div class="templates-description mb-5">
-          <p class="lead">Over 1,000 Downloadable Business &amp; Legal Forms</p>
+          <p class="lead font300">Over 1,000 Downloadable Business &amp; Legal Forms</p>
         </div>
         <button type="button" class="btn btn-outline-info">Learn More</button>
       </div>
     </section>    
+
+    <footer class="container-fluid bg-danger">
+      <div class="container">
+
+        <div class="footer-logo text-center">
+          <img src="media/sb-logo-footer.svg" alt="sb logo">
+        </div>
+
+        <div class="footer-main row">
+          <div class="col-lg-3">
+            <h4>Usefull Links</h4>
+            <hr class="border-light">
+            <div class="d-flex">
+              <p>About</p>
+              <p class="ml-5">Consultancy</p>
+            </div>
+            <div class="d-flex">
+              <p>Contact</p>
+              <p class="ml-5">Partners</p>
+            </div>
+            <div class="d-flex">
+              <p>Library</p>
+              <p class="ml-5">Pay for Services</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <h4>Need Assistance?</h4>
+            <hr class="border-light">
+            <div class="d-flex">
+              <img src="media/helpdesk.svg" alt="helpdesk">
+              <div class="ml-3">
+                <p class="mb-0">+44 (0) 203 - 519 - 1398</p>
+                <p class="small mb-0 text-muted">Monday - Friday, 8 am - 6 pm EET</p>
+              </div>
+            </div>
+            <div class="d-flex">
+              <img src="media/email.svg" alt="email">
+              <div class="ml-3">
+                <p class="mb-0">sales@startingbusiness.com</p>
+                <p class="small mb-0 text-muted">1 business day response</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <h4>Sign up to our Newsletter</h4>
+            <hr class="border-light">
+            <div class="footer-discount p-3">
+              <p class="text-muted mb-0">GET 5% DISCOUNT with your first purchase</p>
+              <img src="media/scissors.svg" alt="scissors">
+            </div>
+            <div class="input-group mt-3">
+              <input type="email" class="form-control px-3 bg-transparent" placeholder="Enter email" aria-label="email">
+              <div class="input-group-append">
+                <button class="btn px-4 btn-info" type="button"><img src="media/arrow-right-small.svg"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="d-flex mb-2">
+              <img class="mr-4" src="media/verified-by-visa.svg" alt="verified by visa">
+              <img src="media/mastercard-securecode.svg" alt="mastercard securecode">
+            </div>
+            <div class="d-flex mb-2">
+              <img class="mr-1" src="media/mastercard.svg" alt="mastercard">
+              <img class="mr-1" src="media/visa.svg" alt="visa">
+              <img class="mr-1" src="media/visa-electron.svg" alt="visa electron">
+              <img class="mr-1" src="media/solo.svg" alt="solo">
+              <img src="media/delta.svg" alt="delta">
+            </div>
+            <div class="d-flex mb-2">
+              <img class="mr-3" src="media/trustwave.svg" alt="trustwave">
+              <img src="media/pci.svg" alt="pci">
+            </div>
+            <p class="small">
+              Credit card payments collected by DELTAQUEST MEDIA (Ireland) Ltd. 
+              Company No IE548227, Registered address: The Black Church, St. 
+              Mary's Place, Dublin 7, Ireland.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-legal border-bottom">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-info" href="#">Disclaimer</a></li>
+            <li class="list-inline-item"><a class="text-info" href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a class="text-info" href="#">Terms of Business</a></li>
+            <li class="list-inline-item"><a class="text-info" href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-credits mt-3">
+          <div class="row">
+            <div class="col-6">
+              <p class="small">
+                &copy;2015-2018 StartingBusiness PTE LTD. All rights reserved. 
+                StartingBusiness and the StartingBusiness Logo are registered 
+                trademarks of the StartingBusiness PTE LTD. In association with 
+                DeltaQuest Group. Designed by DQ media. Developed by Marios 
+                Sofokleous (PictureElement).
+              </p>
+            </div>
+            <div class="col-6 text-right">
+              <ul class="list-inline">
+                <li class="list-inline-item"><a class="text-info" href="#"><img src="media/facebook.svg" alt="facebook"></a></li>
+                <li class="list-inline-item ml-2"><a class="text-info" href="#"><img src="media/twitter.svg" alt="twitter"></a></li>
+                <li class="list-inline-item ml-2"><a class="text-info" href="#"><img src="media/google-plus.svg" alt="google plus"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
