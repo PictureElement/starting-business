@@ -62,7 +62,7 @@ $theme-colors: (
 );
 
 // Body
-$body-bg: #000;
+$body-bg: #777;
 $body-color: #fff;
 
 // Spacing
@@ -74,13 +74,21 @@ $spacers: map-merge((
   2: ($spacer * .5),
   3: $spacer,
   4: ($spacer * 1.5),
-  5: ($spacer * 2)
+  5: ($spacer * 2),
+  6: ($spacer * 4)
 ), $spacers);
 
 // Fonts
 $font-family-sans-serif: 'NunitoSans-Regular', sans-serif;
 $font-size-base: 1rem;
 $lead-font-size: ($font-size-base * 1.75);
+$small-font-size: ($font-size-base * 0.65);         
+$display1-size: 3.8rem;
+$display2-size: 3.2rem;
+$display3-size: 1.5rem;
+$display1-weight: initial;
+$display2-weight: initial;
+$display3-weight: initial;
 
 // Navbar
 $navbar-padding-y: 1.5rem;
@@ -109,12 +117,6 @@ $container-max-widths: (
 
 // Options
 $enable-shadows: true;
-
-// Display headings
-$display1-size: 3.8rem;
-$display2-size: 3.2rem;
-$display1-weight: initial;
-$display2-weight: initial;
 
 // Cards
 $card-border-radius: 20px;
@@ -320,11 +322,16 @@ footer {
 
 .footer-discount {
   border: 1px dashed white;
+  padding: ($spacer * 1.2) ($spacer * 2.25);
   position: relative;
   img {
     position: absolute;
     top: -14px;
   }
+}
+
+.footer-discount-value {
+  font-size: $font-size-base * 1.5;
 }
 
 /*
