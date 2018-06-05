@@ -7401,7 +7401,8 @@ img {
  */
 header {
   position: relative;
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
   header .header-media {
     height: 100%;
     overflow: hidden; }

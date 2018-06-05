@@ -13,7 +13,7 @@
     <button class='return-to-top' id='returnToTop' title='return to top'><img src="media/back-to-top.svg" alt="back to top"></button>
 
     <!-- HEADER -->
-    <header>
+    <header class="container-fluid px-0">
       <!-- VIDEO -->
       <div class="header-media">
         <video autoplay muted loop class="header-video">
@@ -97,7 +97,7 @@
         </div>
       </nav>
       <!-- TITLE -->
-      <div class="header-title">
+      <div class="header-title px-3">
         <h1 class="display-1 font700"><span class="display-2 font300">Helping Businesses</span><br>Get Up & Running</h1>
       </div>
 
@@ -437,7 +437,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
     <script>
-      // Display/Hide return to top button
       $(window).scroll(function() {
         var intViewportHeight = window.innerHeight;
         if($(this).scrollTop() > intViewportHeight) {
@@ -447,8 +446,6 @@
           $('#returnToTop').fadeOut(200);
         }
       });
-
-      // Return to top
       $('#returnToTop').click(function() {
         $('html').animate({
           scrollTop: 0
