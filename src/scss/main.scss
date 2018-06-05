@@ -95,16 +95,16 @@ $display3-weight: initial;
 $text-muted: #949597;
 
 // Navbar
-$navbar-padding-y: 1.5rem;
-$navbar-nav-link-padding-x: .5rem;
+$navbar-padding-y: ($spacer * 1.5);
+$navbar-dark-color: map-get($theme-colors, info);
+$navbar-dark-hover-color: rgba(map-get($theme-colors, info), .75);
+$navbar-dark-active-color: rgba(map-get($theme-colors, info), .75);
 
 // Dropdowns
 $dropdown-bg: map-get($theme-colors, success);
 $dropdown-link-color: $body-color;
 $dropdown-header-color: map-get($theme-colors, primary);
 $dropdown-border-radius: 0;
-//$dropdown-link-hover-color:  
-//$dropdown-link-hover-bg:
 
 // Buttons
 $input-btn-padding-y: .5rem;
@@ -156,8 +156,6 @@ $carousel-indicator-width:  20px;
 $carousel-indicator-height: 20px;
 $carousel-indicator-spacer: 10px;
 
-
-
 /*
  * Include all of Bootstrap
  */
@@ -190,11 +188,12 @@ $carousel-indicator-spacer: 10px;
 
 html {
   font-size: 1rem; // 16px
-}
-
-html, body {
   height: 100%;
   width: 100%;
+  body {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 img {
@@ -235,7 +234,7 @@ img {
 header {
   position: relative;
   height: 100%;
-  overflow: hidden;
+  //overflow: hidden;
   .header-media {
     height: 100%;
     overflow: hidden;
@@ -250,6 +249,8 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
+    background: map-get($theme-colors, primary-glassy);
+    z-index: 1100;
   }
   .header-title {
     text-align: center;
@@ -290,16 +291,16 @@ header {
   }
 }
 
-.currency-btn {
-  padding: 0;
-  span {
-    font-size: ($font-size-base * 0.7);
-    width: 35px;
-    height: 35px;
-    display: inline-block;
-    color: $body-color;
-    line-height: 35px;
-  }
+.dropdown-1 {
+  transform:translateY(1.8rem);
+}
+
+.dropdown-2 {
+  transform:translateY(1.85rem);
+}
+
+.cart-item, .currency-item {
+  border-right: 1px solid rgba($border-color, .5);
 }
 
 .cart-link {
@@ -436,11 +437,6 @@ footer {
   border-bottom: 1px solid rgba($border-color, .5);
 }
 
-
-
-
-
-
 /*
  * Media queries (Desktop-first approach)
  */
@@ -466,19 +462,28 @@ footer {
   .consultancy {
     border-right: 0;
   }
-  .card-deck .card {
-    margin-bottom: 0.75rem;
-  }
 }
 
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
-  
+  header {
+    .navbar {
+      background: map-get($theme-colors, primary);
+    }
+  }
+  .dropdown-1 {
+    transform:translateY(0);
+  }
+  .dropdown-2 {
+    transform:translateY(0);
+  }
+  .cart-item, .currency-item {
+    border-right: 0;
+  }
+  .cart-link span {
+    display: none;
+  }
+  .card-deck .card {
+    margin-bottom: 0.75rem;
+  }
 }
-
-// Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
-
-}
-
-

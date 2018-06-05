@@ -21,7 +21,7 @@
         </video>
       </div>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary-glassy">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="media/sb-logo-header.svg" alt="sb logo">
@@ -29,14 +29,14 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse mt-3 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownServices" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Services <img class="ml-1" src="media/arrow-down-sm.svg" alt="dropdown">
                 </a>
-                <div class="dropdown-menu" aria-labelledby="dropdownServices" style="transform:translate(0,28px);">
-                  <div class="d-flex">
+                <div class="dropdown-menu dropdown-1" aria-labelledby="dropdownServices">
+                  <div class="d-flex flex-column flex-lg-row">
                     <div>
                       <h6 class="dropdown-header">CORPORATE SERVICES</h6>
                       <a class="dropdown-item" href="#">Company Formation</a>
@@ -73,23 +73,23 @@
                 <a class="nav-link" href="#">FAQ</a>
               </li>
             </ul>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown pr-4 border-right d-flex align-items-center">
-                <button class="currency-btn btn bg-transparent dropdown-toggle" type="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="border rounded-circle">USD</span><img class="ml-2" src="media/arrow-down-sm.svg" alt="dropdown">
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownCurrency" style="transform:translate(0,27px);">
-                  <div class="d-flex currency-selection">
+            <hr class="d-lg-none">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item currency-item dropdown pr-lg-4">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownCurrency" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  USD <img class="ml-1" src="media/arrow-down-sm.svg" alt="dropdown">
+                </a>
+                <div class="dropdown-menu dropdown-2 mt-lg-0" aria-labelledby="dropdownCurrency">
+                  <div class="d-flex flex-column flex-lg-row">
                     <a class="dropdown-item" href="#">EUR</a>
                     <a class="dropdown-item" href="#">GPB</a>
-                    <a class="d-none dropdown-item" href="#">USD</a>
                   </div>
                 </div>
               </li>
-              <li class="nav-item border-right px-4">
+              <li class="nav-item cart-item px-lg-4">
                 <a class="nav-link cart-link" href="#"><img src="media/cart.svg" alt="cart"><span class="badge badge-success">25</span></a>
               </li>
-              <li class="nav-item pl-4">
+              <li class="nav-item pl-lg-4">
                 <a class="nav-link" href="#"><img class="mr-2" src="media/user.svg" alt="user">Login</a>
               </li>
             </ul>
@@ -202,7 +202,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="container">
-                <div class="card-deck flex-column flex-md-row p-4">
+                <div class="card-deck flex-column flex-lg-row p-4">
                   <div class="card shadow">
                     <div class="card-body text-success">
                       <h3 class="card-title display-3 font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h3>
@@ -250,7 +250,7 @@
             </div>
             <div class="carousel-item">
               <div class="container">
-                <div class="card-deck flex-column flex-md-row p-4">
+                <div class="card-deck flex-column flex-lg-row p-4">
                   <div class="card shadow">
                     <div class="card-body text-success">
                       <h3 class="card-title display-3 font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h3>
@@ -347,7 +347,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mt-6 mt-lg-0">
             <h4 class="font300 display-3">Need Assistance?</h4>
             <hr class="my-5">
             <div class="d-flex mb-5 align-items-start">
@@ -365,7 +365,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mt-6 mt-lg-0">
             <h4 class="font300 display-3">Sign up to our Newsletter</h4>
             <div class="footer-discount mt-5">
               <p class="text-muted mb-0">GET <span class="footer-discount-value text-info font300">5% DISCOUNT</span> with your first purchase</p>
@@ -378,7 +378,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mt-6 mt-lg-0">
             <div class="d-flex mb-3">
               <img class="mr-4" src="media/verified-by-visa.svg" alt="verified by visa">
               <img src="media/mastercard-securecode.svg" alt="mastercard securecode">
