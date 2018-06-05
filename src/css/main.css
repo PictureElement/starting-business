@@ -7416,11 +7416,27 @@ header {
     color: #be1e2d; }
 
 .currency-btn {
-  width: 35px;
-  height: 35px;
-  font-size: 0.7rem;
-  border-radius: 50%;
   padding: 0; }
+  .currency-btn span {
+    font-size: 0.7rem;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    color: #fff;
+    line-height: 35px; }
+
+.cart-link {
+  position: relative; }
+  .cart-link span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 5px; }
 
 /*
  * About

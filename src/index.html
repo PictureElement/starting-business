@@ -71,21 +71,22 @@
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown border-right">
-                <button class="currency-btn btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  USD
+              <li class="nav-item dropdown pr-4 border-right d-flex align-items-center">
+                <button class="currency-btn btn bg-transparent dropdown-toggle" type="button" id="dropdownCurrency" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="border rounded-circle">USD</span><img class="ml-2" src="media/arrow-down-sm.svg" alt="dropdown">
                 </button>
-                <img class="ml-1" src="media/arrow-down-sm.svg" alt="dropdown">
-                <div class="dropdown-menu" aria-labelledby="dropdownCurrency">
-                  <a class="dropdown-item" href="#">EUR</a>
-                  <a class="dropdown-item" href="#">GPB</a>
-                  <a class="dropdown-item" href="#">USD</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownCurrency" style="transform:translate(0,27px);">
+                  <div class="d-flex currency-selection">
+                    <a class="dropdown-item" href="#">EUR</a>
+                    <a class="dropdown-item" href="#">GPB</a>
+                    <a class="d-none dropdown-item" href="#">USD</a>
+                  </div>
                 </div>
               </li>
-              <li class="nav-item border-right">
-                <a class="nav-link" href="#"><img src="media/cart.svg" alt="cart"></a>
+              <li class="nav-item border-right px-4">
+                <a class="nav-link cart-link" href="#"><img src="media/cart.svg" alt="cart"><span class="badge badge-success">25</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item pl-4">
                 <a class="nav-link" href="#"><img src="media/user.svg" alt="user"> Login</a>
               </li>
             </ul>
