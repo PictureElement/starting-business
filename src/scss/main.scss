@@ -188,9 +188,44 @@ $carousel-indicator-spacer: 10px;
  * General 
  */
 
+html {
+  font-size: 1rem; // 16px
+}
+
 html, body {
   height: 100%;
   width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*
+ * Back to top
+ */
+
+.return-to-top {
+  display: none;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  cursor: pointer;
+  width: 75px;
+  height: 75px;
+  border: none;
+  outline: none;
+  z-index: 1100;
+  background-color: map-get($theme-colors, success-glassy);
+  &:hover {
+    background-color: map-get($theme-colors, success);
+  }
+  &:focus {
+    border: none;
+  }
 }
 
 /*
@@ -227,7 +262,7 @@ header {
   }
   .header-services {
     position: absolute;
-    top: 87%;
+    top: 85%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -410,14 +445,30 @@ footer {
  * Media queries (Desktop-first approach)
  */
 
+@media (max-width: 440px) {
+  .header-services {
+    display: none;
+  }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-
+  html {
+    font-size: 0.8rem;
+  }
+  .card-group > .card {
+    margin-bottom: 0;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  
+  .consultancy {
+    border-right: 0;
+  }
+  .card-deck .card {
+    margin-bottom: 0.75rem;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -427,7 +478,7 @@ footer {
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-  
+
 }
 
 

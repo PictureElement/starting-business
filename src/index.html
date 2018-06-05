@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+    <!-- RETURN TO TOP BUTTON -->
+    <button class='return-to-top' id='returnToTop' title='return to top'><img src="media/back-to-top.svg" alt="back to top"></button>
+
     <!-- HEADER -->
     <header>
       <!-- VIDEO -->
@@ -98,57 +101,10 @@
         <h1 class="display-1 font700"><span class="display-2 font300">Helping Businesses</span><br>Get Up & Running</h1>
       </div>
 
-      <!-- SERVICES
-      <div class="container header-services">
-        <div class="row">
-          <div class="col-2 offset-1 text-center header-service">
-            <div class="header-service-icon border rounded-circle">
-              <img src="media/company-formation.svg" alt="company formation">
-            </div>
-            <div class="mt-3 header-service-description d-none d-sm-block">
-              Company Formation
-            </div>
-          </div>
-          <div class="col-2 text-center header-service">
-            <div class="header-service-icon border rounded-circle">
-              <img src="media/personal-account.svg" alt="personal account">
-            </div>
-            <div class="mt-3 header-service-description d-none d-sm-block">
-              Personal Account
-            </div>
-          </div>
-          <div class="col-2 text-center header-service">
-            <div class="header-service-icon border rounded-circle">
-              <img src="media/coorporate-account.svg" alt="coorporate account">
-            </div>
-            <div class="mt-3 header-service-description d-none d-sm-block">
-              Coorporate Account
-            </div>
-          </div>
-          <div class="col-2 text-center header-service">
-            <div class="header-service-icon border rounded-circle">
-              <img src="media/trademark-registration.svg" alt="trademark registration">
-            </div>
-            <div class="mt-3 header-service-description d-none d-sm-block">
-              Trademark Registration
-            </div>
-          </div>
-          <div class="col-2 text-center header-service">
-            <div class="header-service-icon border rounded-circle">
-              <img src="media/asset-protection.svg" alt="asset protection">
-            </div>
-            <div class="mt-3 header-service-description d-none d-sm-block">
-              Asset Protection
-            </div>
-          </div>
-        </div>
-      </div>
-      -->
-
       <!-- SERVICES -->
       <div class="container header-services">
         <div class="d-flex justify-content-center">
-          <div class="text-center header-service mr-6">
+          <div class="text-center header-service mr-2 mr-sm-4 mr-md-6 ">
             <div class="header-service-icon border rounded-circle">
               <img src="media/company-formation.svg" alt="company formation">
             </div>
@@ -156,7 +112,7 @@
               Company Formation
             </div>
           </div>
-          <div class="text-center header-service mr-6">
+          <div class="text-center header-service mr-2 mr-sm-4 mr-md-6">
             <div class="header-service-icon border rounded-circle">
               <img src="media/personal-account.svg" alt="personal account">
             </div>
@@ -164,7 +120,7 @@
               Personal Account
             </div>
           </div>
-          <div class="text-center header-service mr-6">
+          <div class="text-center header-service mr-2 mr-sm-4 mr-md-6">
             <div class="header-service-icon border rounded-circle">
               <img src="media/coorporate-account.svg" alt="coorporate account">
             </div>
@@ -172,7 +128,7 @@
               Coorporate Account
             </div>
           </div>
-          <div class="text-center header-service mr-6">
+          <div class="text-center header-service mr-2 mr-sm-4 mr-md-6">
             <div class="header-service-icon border rounded-circle">
               <img src="media/trademark-registration.svg" alt="trademark registration">
             </div>
@@ -240,7 +196,7 @@
         </div>
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
-            <li class="rounded-circle" data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li class="rounded-circle active" data-target="#carousel" data-slide-to="0"></li>
             <li class="rounded-circle" data-target="#carousel" data-slide-to="1"></li>
           </ol>
           <div class="carousel-inner">
@@ -418,7 +374,7 @@
             <div class="input-group mt-3">
               <input type="email" class="form-control px-3 bg-transparent" placeholder="Enter email" aria-label="email">
               <div class="input-group-append">
-                <button class="btn px-4 btn-info" type="button"><img src="media/arrow-right-small.svg"></button>
+                <button class="btn px-4 btn-info" type="button"><img src="media/arrow-right-small.svg" alt="submit"></button>
               </div>
             </div>
           </div>
@@ -477,8 +433,27 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+      // Display/Hide return to top button
+      $(window).scroll(function() {
+        var intViewportHeight = window.innerHeight;
+        if($(this).scrollTop() > intViewportHeight) {
+          $('#returnToTop').fadeIn(200);
+        }
+        else {
+          $('#returnToTop').fadeOut(200);
+        }
+      });
+
+      // Return to top
+      $('#returnToTop').click(function() {
+        $('html').animate({
+          scrollTop: 0
+        }, 500);
+      });
+    </script>
   </body>
 </html>
