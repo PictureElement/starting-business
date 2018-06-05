@@ -147,6 +147,17 @@ $card-spacer-x: 2rem;
 // Grid columns
 $grid-gutter-width: 30px;
 
+// Carousel 
+$carousel-control-color: map-get($theme-colors, success);
+$carousel-control-icon-width: 60px;
+$carousel-control-width: 5%;
+$carousel-indicator-active-bg: map-get($theme-colors, success);
+$carousel-indicator-width:  20px;
+$carousel-indicator-height: 20px;
+$carousel-indicator-spacer: 10px;
+
+
+
 /*
  * Include all of Bootstrap
  */
@@ -342,6 +353,10 @@ header {
   font-size: ($font-size-base * 1.5);
 }
 
+.carousel-indicators {
+  bottom: -5rem;
+}
+
 /*
  * Templates
  */
@@ -391,11 +406,6 @@ footer {
 
 
 
-
-
-
-
-
 /*
  * Media queries (Desktop-first approach)
  */
@@ -419,3 +429,5 @@ footer {
 @media (max-width: 1199.98px) {
   
 }
+
+

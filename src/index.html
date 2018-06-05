@@ -87,7 +87,7 @@
                 <a class="nav-link cart-link" href="#"><img src="media/cart.svg" alt="cart"><span class="badge badge-success">25</span></a>
               </li>
               <li class="nav-item pl-4">
-                <a class="nav-link" href="#"><img src="media/user.svg" alt="user"> Login</a>
+                <a class="nav-link" href="#"><img class="mr-2" src="media/user.svg" alt="user">Login</a>
               </li>
             </ul>
           </div>
@@ -235,61 +235,121 @@
 
     <!-- SPECIAL OFFERS -->
     <section class="special-offers container-fluid bg-light">
-      <div class="container">
         <div class="special-offers-btn text-center">
           <a href="#" class="btn btn-warning text-success font700">SPECIAL OFFERS</a>
         </div>
-        <div id="carouselControls" class="carousel slide" data-ride="carousel">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li class="rounded-circle" data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li class="rounded-circle" data-target="#carousel" data-slide-to="1"></li>
+          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class="card-deck flex-column flex-md-row p-4">
-                <div class="card shadow">
-                  <div class="card-body text-success">
-                    <h3 class="card-title display-3 font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h3>
-                    <p class="card-text">
-                      Company with lowest EU corporate tax 12.5% &amp; zero tax on dividends.<br> Account in Switzerland for daily transactions: complete banking services.
-                    </p>
+              <div class="container">
+                <div class="card-deck flex-column flex-md-row p-4">
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h3>
+                      <p class="card-text">
+                        Company with lowest EU corporate tax 12.5% &amp; zero tax on dividends.<br> Account in Switzerland for daily transactions: complete banking services.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $1,290
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
-                  <div class="card-price bg-danger font700">
-                    PRICE NOW $1,290
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Belize Company &amp; Free Account with Choice Bank</h3>
+                      <p class="card-text">
+                        Quick &amp; easy company formation. Tax exempted IBC with high level of privacy. International account with safe &amp; secure Choice Bank.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $750
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Marshall Islands Company + Bank Account</h3>
+                      <p class="card-text">
+                        Set up your offshore company and FREE corporate bank account with Euro Pacific Bank.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $990
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
                 </div>
-                <div class="card shadow">
-                  <div class="card-body text-success">
-                    <h3 class="card-title display-3 font700">Belize Company &amp; Free Account with Choice Bank</h3>
-                    <p class="card-text">
-                      Quick &amp; easy company formation. Tax exempted IBC with high level of privacy. International account with safe &amp; secure Choice Bank.
-                    </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="card-deck flex-column flex-md-row p-4">
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Cyprus Company &amp; Free Account with CIM Bank (Switzerland)</h3>
+                      <p class="card-text">
+                        Company with lowest EU corporate tax 12.5% &amp; zero tax on dividends.<br> Account in Switzerland for daily transactions: complete banking services.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $1,290
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
-                  <div class="card-price bg-danger font700">
-                    PRICE NOW $750
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Belize Company &amp; Free Account with Choice Bank</h3>
+                      <p class="card-text">
+                        Quick &amp; easy company formation. Tax exempted IBC with high level of privacy. International account with safe &amp; secure Choice Bank.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $750
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
-                  <div class="card-footer">
-                    <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
-                  </div>
-                </div>
-                <div class="card shadow">
-                  <div class="card-body text-success">
-                    <h3 class="card-title display-3 font700">Marshall Islands Company + Bank Account</h3>
-                    <p class="card-text">
-                      Set up your offshore company and FREE corporate bank account with Euro Pacific Bank.
-                    </p>
-                  </div>
-                  <div class="card-price bg-danger font700">
-                    PRICE NOW $990
-                  </div>
-                  <div class="card-footer">
-                    <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                  <div class="card shadow">
+                    <div class="card-body text-success">
+                      <h3 class="card-title display-3 font700">Marshall Islands Company + Bank Account</h3>
+                      <p class="card-text">
+                        Set up your offshore company and FREE corporate bank account with Euro Pacific Bank.
+                      </p>
+                    </div>
+                    <div class="card-price bg-danger font700">
+                      PRICE NOW $990
+                    </div>
+                    <div class="card-footer">
+                      <a href="#" class="card-btn btn btn-outline-success">Learn more</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </div>
     </section>
 
     <!-- DOCUMENT TEMPLATES -->
