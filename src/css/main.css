@@ -2599,7 +2599,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 1.5rem;
   margin-bottom: 0;
   font-size: 0.875rem;
-  color: #6c757d;
+  color: #be1e2d;
   white-space: nowrap; }
 
 .dropdown-item-text {
@@ -7518,10 +7518,10 @@ header {
  */
 .special-offers {
   border-top: 10px solid #fff;
-  padding: 6rem 0 9.5rem 0; }
+  padding: 6rem 0 8rem 0; }
 
 .special-offers-btn {
-  margin-bottom: 6.9rem; }
+  margin-bottom: 5.5rem; }
   .special-offers-btn a {
     padding: 0.2rem 2.65rem;
     border-radius: 20px;
