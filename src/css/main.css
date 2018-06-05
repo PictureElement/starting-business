@@ -5,7 +5,7 @@
  * Date: 01.06.2018                                         *
  ************************************************************/
 /*
- * Custom fonts
+ * Fonts
  */
 @font-face {
   font-family: "NunitoSans-Light";
@@ -213,7 +213,7 @@ table {
 caption {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  color: #6c757d;
+  color: #949597;
   text-align: left;
   caption-side: bottom; }
 
@@ -380,7 +380,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid rgba(255, 255, 255, 0.5); }
 
 small,
 .small {
@@ -1484,7 +1484,7 @@ pre {
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
@@ -1501,7 +1501,7 @@ pre {
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0 0.2rem rgba(190, 30, 45, 0.25); }
   .form-control::placeholder {
-    color: #6c757d;
+    color: #fff;
     opacity: 1; }
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
@@ -1621,7 +1621,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
   .form-check-input:disabled ~ .form-check-label {
-    color: #6c757d; }
+    color: #949597; }
 
 .form-check-label {
   margin-bottom: 0; }
@@ -2477,7 +2477,7 @@ input[type="button"].btn-block {
   color: #fff;
   text-align: left;
   list-style: none;
-  background-color: #fff;
+  background-color: #262262;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
@@ -2574,7 +2574,7 @@ input[type="button"].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #fff;
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
@@ -2605,7 +2605,7 @@ input[type="button"].btn-block {
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1.5rem;
-  color: #212529; }
+  color: #fff; }
 
 .btn-group,
 .btn-group-vertical {
@@ -2786,7 +2786,7 @@ input[type="button"].btn-block {
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem; }
   .input-group-text input[type="radio"],
   .input-group-text input[type="checkbox"] {
@@ -2901,7 +2901,7 @@ input[type="button"].btn-block {
   vertical-align: middle;
   background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
   appearance: none; }
   .custom-select:focus {
@@ -2966,7 +2966,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
-  border: 1px solid #ced4da;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0.25rem;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
   .custom-file-label::after {
@@ -2982,7 +2982,7 @@ input[type="button"].btn-block {
     color: #495057;
     content: "Browse";
     background-color: #e9ecef;
-    border-left: 1px solid #ced4da;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 0 0.25rem 0.25rem 0; }
 
 .custom-range {
@@ -4777,19 +4777,19 @@ button.bg-success-glassy:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 1px solid #dee2e6 !important; }
+  border: 1px solid #fff !important; }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important; }
+  border-top: 1px solid #fff !important; }
 
 .border-right {
-  border-right: 1px solid #dee2e6 !important; }
+  border-right: 1px solid #fff !important; }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important; }
+  border-bottom: 1px solid #fff !important; }
 
 .border-left {
-  border-left: 1px solid #dee2e6 !important; }
+  border-left: 1px solid #fff !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -7311,7 +7311,7 @@ a.text-success-glassy:hover, a.text-success-glassy:focus {
   color: #fff !important; }
 
 .text-muted {
-  color: #6c757d !important; }
+  color: #949597 !important; }
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important; }
@@ -7480,18 +7480,18 @@ header {
  * About
  */
 .about {
+  border-top: 10px solid #fff;
   padding: 6.5rem 0;
   background: linear-gradient(0deg, rgba(143, 16, 28, 0.7), rgba(143, 16, 28, 0.7)), url("../media/about.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  border-top: 10px solid white; }
+  background-repeat: no-repeat; }
 
 /*
  * Consultancy
  */
 .consultancy {
-  border-right: 10px solid white;
-  border-top: 10px solid white;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #fff;
   padding: 5.7rem 0;
   background: linear-gradient(0deg, rgba(38, 34, 98, 0.7), rgba(38, 34, 98, 0.7)), url("../media/consultancy.jpg");
   background-size: cover;
@@ -7504,7 +7504,7 @@ header {
  * How it works
  */
 .how-it-works {
-  border-top: 10px solid white;
+  border-top: 10px solid #fff;
   padding: 5.7rem 0;
   background: linear-gradient(0deg, rgba(38, 34, 98, 0.7), rgba(38, 34, 98, 0.7)), url("../media/how-it-works.jpg");
   background-size: cover;
@@ -7517,7 +7517,7 @@ header {
  * Special offers
  */
 .special-offers {
-  border-top: 10px solid white;
+  border-top: 10px solid #fff;
   padding: 6rem 0 9.5rem 0; }
 
 .special-offers-btn {
@@ -7535,7 +7535,7 @@ header {
  * Templates
  */
 .templates {
-  border-top: 10px solid white;
+  border-top: 10px solid #fff;
   padding: 7.5rem 0;
   background: linear-gradient(0deg, rgba(35, 31, 32, 0.7), rgba(35, 31, 32, 0.7)), url("../media/templates.jpg");
   background-size: cover;
@@ -7545,13 +7545,14 @@ header {
  * Footer
  */
 footer {
+  border-top: 10px solid #fff;
   padding: 5.4rem 0; }
 
 .footer-main {
   margin-top: 5.4rem; }
 
 .footer-discount {
-  border: 1px dashed white;
+  border: 1px dashed rgba(255, 255, 255, 0.5);
   padding: 1.2rem 2.25rem;
   position: relative; }
   .footer-discount img {
@@ -7561,14 +7562,11 @@ footer {
 .footer-discount-value {
   font-size: 1.5rem; }
 
+.footer-legal {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
 /*
  * Media queries (Desktop-first approach)
  */
-@media (max-width: 767.98px) {
-  .consultancy {
-    border-right: none; } }
-@media (max-width: 1199.98px) {
-  html {
-    font-size: 0.8rem; } }
 
 /*# sourceMappingURL=main.css.map */

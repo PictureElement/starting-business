@@ -6,7 +6,7 @@
  ************************************************************/
 
 /*
- * Custom fonts
+ * Fonts
  */
 
 @font-face {
@@ -34,16 +34,16 @@
  */
 
 // Colors
-$scarlet: rgb(143,16,28);
-$scarlet-glassy: rgba(143,16,28,0.7);
-$navy: rgb(38,34,98);
-$navy-glassy: rgba(38,34,98,0.7);
 $red: rgb(190,30,45);
 $red-glassy: rgba(190,30,45,0.7);
-$cloud: rgb(230,231,232);
 $olive: rgb(187,170,40);
+$scarlet: rgb(143,16,28);
+$scarlet-glassy: rgba(143,16,28,0.7);
 $coal: rgb(35,31,32);
 $coal-glassy: rgba(35,31,32,0.7);
+$cloud: rgb(230,231,232);
+$navy: rgb(38,34,98);
+$navy-glassy: rgba(38,34,98,0.7);
 $snow: rgb(255,255,255);
 
 // Theme colors
@@ -65,6 +65,9 @@ $theme-colors: (
 $body-bg: #777;
 $body-color: #fff;
 
+// Borders
+$border-color: #fff;
+
 // Spacing
 $spacer: 1rem;
 $spacers: ();
@@ -80,7 +83,7 @@ $spacers: map-merge((
 
 // Fonts
 $font-family-sans-serif: 'NunitoSans-Regular', sans-serif;
-$font-size-base: 1rem;
+$font-size-base: 1rem; // Assume 16px
 $lead-font-size: ($font-size-base * 1.75);
 $small-font-size: ($font-size-base * 0.65);         
 $display1-size: 3.8rem;
@@ -89,14 +92,28 @@ $display3-size: 1.5rem;
 $display1-weight: initial;
 $display2-weight: initial;
 $display3-weight: initial;
+$text-muted: #949597;
 
 // Navbar
 $navbar-padding-y: 1.5rem;
 $navbar-nav-link-padding-x: 1.5rem;
 
+// Dropdowns
+$dropdown-bg: map-get($theme-colors, success);
+$dropdown-link-color: $body-color;
+//$dropdown-link-hover-color:  
+//$dropdown-link-hover-bg:
+
 // Buttons
 $input-btn-padding-y: .5rem;
 $input-btn-padding-x: 4rem;
+
+// Forms
+$input-placeholder-color: $body-color;
+$input-border-color: rgba($border-color, .5);
+
+// Horizontal rule
+$hr-border-color: rgba($border-color, .5);
 
 // Grid breakpoints
 $grid-breakpoints: (
@@ -229,12 +246,12 @@ header {
  */
 
 .about {
+  border-top: 10px solid $border-color;
   padding: 6.5rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, danger-glassy), map-get($theme-colors, danger-glassy)), url('../media/about.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  border-top: 10px solid map-get($theme-colors, info);
 }
 
 /*
@@ -242,8 +259,8 @@ header {
  */
 
 .consultancy {
-  border-right: 10px solid map-get($theme-colors, info);
-  border-top: 10px solid map-get($theme-colors, info);
+  border-right: 10px solid $border-color;
+  border-top: 10px solid $border-color;
   padding: 5.7rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/consultancy.jpg');
@@ -260,7 +277,7 @@ header {
  */
 
 .how-it-works {
-  border-top: 10px solid map-get($theme-colors, info);
+  border-top: 10px solid $border-color;
   padding: 5.7rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, success-glassy), map-get($theme-colors, success-glassy)), url('../media/how-it-works.jpg');
@@ -277,7 +294,7 @@ header {
  */
 
 .special-offers {
-  border-top: 10px solid map-get($theme-colors, info);
+  border-top: 10px solid $border-color;
   padding: 6rem 0 9.5rem 0;
 }
 
@@ -300,7 +317,7 @@ header {
  */
 
 .templates {
-  border-top: 10px solid map-get($theme-colors, info);
+  border-top: 10px solid $border-color;
   padding: 7.5rem 0;
   // Background image with color overlay
   background: linear-gradient(0deg, map-get($theme-colors, dark-glassy), map-get($theme-colors, dark-glassy)), url('../media/templates.jpg');
@@ -313,6 +330,7 @@ header {
  */
 
 footer {
+  border-top: 10px solid $border-color;
   padding: 5.4rem 0;
 }
 
@@ -321,8 +339,8 @@ footer {
 }
 
 .footer-discount {
-  border: 1px dashed white;
-  padding: ($spacer * 1.2) ($spacer * 2.25);
+  border: 1px dashed rgba($border-color, .5);
+  padding: 1.2rem 2.25rem;
   position: relative;
   img {
     position: absolute;
@@ -333,6 +351,20 @@ footer {
 .footer-discount-value {
   font-size: $font-size-base * 1.5;
 }
+
+.footer-legal {
+  border-bottom: 1px solid rgba($border-color, .5);
+}
+
+
+
+
+
+
+
+
+
+
 
 /*
  * Media queries (Desktop-first approach)
@@ -345,9 +377,7 @@ footer {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
-  .consultancy {
-    border-right: none;
-  }
+  
 }
 
 // Medium devices (tablets, less than 992px)
@@ -357,7 +387,5 @@ footer {
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-  html {
-    font-size: 0.8rem;
-  }
+  
 }

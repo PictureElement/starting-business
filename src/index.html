@@ -5,17 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Starting Business</title>
-    <!-- Animate.css -->
-    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">-->
     <!-- Bootstrap & Page-specific styles -->
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     <!-- HEADER -->
     <header>
-      <!-- MEDIA -->
+      <!-- VIDEO -->
       <div class="header-media">
-        <!-- VIDEO -->
         <video autoplay muted loop class="header-video">
           <source src="media/video.mp4" type="video/mp4">
         </video>
@@ -36,9 +33,9 @@
                   Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="dropdownServices">
+                  <h6 class="dropdown-header">CORPORATE SERVICES</h6>
                   <a class="dropdown-item" href="#">Action</a>
                   <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Something else here</a>
                 </div>
               </li>
@@ -80,7 +77,8 @@
       <div class="header-title">
         <h1 class="display-1 font700"><span class="display-2 font300">Helping Businesses</span><br>Get Up & Running</h1>
       </div>
-      <!-- SERVICES -->
+
+      <!-- SERVICES
       <div class="container header-services">
         <div class="row">
           <div class="col-2 offset-1 text-center header-service">
@@ -125,15 +123,64 @@
           </div>
         </div>
       </div>
+      -->
+
+      <!-- SERVICES -->
+      <div class="container header-services">
+        <div class="d-flex justify-content-center">
+          <div class="text-center header-service mr-6">
+            <div class="header-service-icon border rounded-circle">
+              <img src="media/company-formation.svg" alt="company formation">
+            </div>
+            <div class="mt-3 header-service-description d-none d-sm-block">
+              Company Formation
+            </div>
+          </div>
+          <div class="text-center header-service mr-6">
+            <div class="header-service-icon border rounded-circle">
+              <img src="media/personal-account.svg" alt="personal account">
+            </div>
+            <div class="mt-3 header-service-description d-none d-sm-block">
+              Personal Account
+            </div>
+          </div>
+          <div class="text-center header-service mr-6">
+            <div class="header-service-icon border rounded-circle">
+              <img src="media/coorporate-account.svg" alt="coorporate account">
+            </div>
+            <div class="mt-3 header-service-description d-none d-sm-block">
+              Coorporate Account
+            </div>
+          </div>
+          <div class="text-center header-service mr-6">
+            <div class="header-service-icon border rounded-circle">
+              <img src="media/trademark-registration.svg" alt="trademark registration">
+            </div>
+            <div class="mt-3 header-service-description d-none d-sm-block">
+              Trademark Registration
+            </div>
+          </div>
+          <div class="text-center header-service">
+            <div class="header-service-icon border rounded-circle">
+              <img src="media/asset-protection.svg" alt="asset protection">
+            </div>
+            <div class="mt-3 header-service-description d-none d-sm-block">
+              Asset Protection
+            </div>
+          </div>
+        </div>
+      </div>
+
     </header>
 
+    <!-- ABOUT -->
     <section class="about container-fluid text-center">
       <div class="container">
         <div class="about-icon mb-2">
           <img src="media/sb-logo-about.svg" alt="sb logo">
         </div>
         <div class="about-heading">
-          <h2 class="display-2 font700">AFFORDABLE * RELIABLE * EXPERIENCED</h2>
+          <h2 class="display-2 font700">AFFORDABLE <span style="position:relative;top:8px;">*</span> RELIABLE <span style="position:relative;top:8px;">*</span> EXPERIENCED</h2>
         </div>
         <div class="about-description mb-5">
           <p class="lead font300">Starting Business have been providing corporate services for over 20 years.</p>
@@ -142,6 +189,7 @@
       </div>
     </section>
 
+    <!-- REQUEST CONSULTANCY & HOW IT WORKS -->
     <div class="card-group flex-column flex-md-row">
       <section class="consultancy card text-center bg-primary rounded-0">
         <div class="card-body py-0">
@@ -165,12 +213,12 @@
       </section>
     </div>
 
+    <!-- SPECIAL OFFERS -->
     <section class="special-offers container-fluid bg-light">
       <div class="container">
         <div class="special-offers-btn text-center">
           <a href="#" class="btn btn-warning text-success font700">SPECIAL OFFERS</a>
         </div>
-        <!-- CAROUSEL -->
         <div id="carouselControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -182,7 +230,7 @@
                       Company with lowest EU corporate tax 12.5% &amp; zero tax on dividends.<br> Account in Switzerland for daily transactions: complete banking services.
                     </p>
                   </div>
-                  <div class="card-price bg-primary font700">
+                  <div class="card-price bg-danger font700">
                     PRICE NOW $1,290
                   </div>
                   <div class="card-footer">
@@ -196,7 +244,7 @@
                       Quick &amp; easy company formation. Tax exempted IBC with high level of privacy. International account with safe &amp; secure Choice Bank.
                     </p>
                   </div>
-                  <div class="card-price bg-primary font700">
+                  <div class="card-price bg-danger font700">
                     PRICE NOW $750
                   </div>
                   <div class="card-footer">
@@ -210,7 +258,7 @@
                       Set up your offshore company and FREE corporate bank account with Euro Pacific Bank.
                     </p>
                   </div>
-                  <div class="card-price bg-primary font700">
+                  <div class="card-price bg-danger font700">
                     PRICE NOW $990
                   </div>
                   <div class="card-footer">
@@ -224,6 +272,7 @@
       </div>
     </section>
 
+    <!-- DOCUMENT TEMPLATES -->
     <section class="templates container-fluid text-center">
       <div class="container">
         <div class="templates-icon mb-3">
@@ -239,18 +288,16 @@
       </div>
     </section>    
 
+    <!-- FOOTER -->
     <footer class="container-fluid bg-danger">
       <div class="container">
-
         <div class="footer-logo text-center">
           <img src="media/sb-logo-footer.svg" alt="sb logo">
         </div>
-
         <div class="footer-main row">
-
           <div class="col-lg-3">
             <h4 class="font300 display-3">Usefull Links</h4>
-            <hr class="border-light my-5">
+            <hr class="my-5">
             <div class="d-flex">
               <ul class="list-inline">
                 <li><a class="text-info" href="#">About</a></li>
@@ -264,10 +311,9 @@
               </ul>
             </div>
           </div>
-
           <div class="col-lg-3">
             <h4 class="font300 display-3">Need Assistance?</h4>
-            <hr class="border-light my-5">
+            <hr class="my-5">
             <div class="d-flex mb-5 align-items-start">
               <img class="mt-1" src="media/helpdesk.svg" alt="helpdesk">
               <div class="ml-3">
@@ -283,7 +329,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-3">
             <h4 class="font300 display-3">Sign up to our Newsletter</h4>
             <div class="footer-discount mt-5">
@@ -297,7 +342,6 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-3">
             <div class="d-flex mb-3">
               <img class="mr-4" src="media/verified-by-visa.svg" alt="verified by visa">
@@ -321,8 +365,7 @@
             </p>
           </div>
         </div>
-
-        <div class="footer-legal border-bottom mt-5">
+        <div class="footer-legal mt-5">
           <ul class="list-inline">
             <li class="list-inline-item"><a class="text-info" href="#">Disclaimer</a></li>
             <li class="list-inline-item"><a class="text-info" href="#">Privacy Policy</a></li>
@@ -330,7 +373,6 @@
             <li class="list-inline-item"><a class="text-info" href="#">Terms of Use</a></li>
           </ul>
         </div>
-
         <div class="footer-credits mt-3">
           <div class="row">
             <div class="col-6">
@@ -350,10 +392,9 @@
             </div>
           </div>
         </div>
-
       </div>
     </footer>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
