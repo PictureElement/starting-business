@@ -182,6 +182,10 @@ $carousel-indicator-spacer: 10px;
   font-family: 'NunitoSans-Bold', sans-serif;
 }
 
+.asterisk {
+  vertical-align: 0.3rem;
+}
+
 /*
  * General 
  */
@@ -490,5 +494,9 @@ footer {
 @media (max-width: 1199.98px) { 
   .footer-discount {
     width: 100%;
+  }
+  .asterisk {
+    display: block;
+    padding-bottom: 0.5rem;
   }
 }

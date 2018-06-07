@@ -7359,6 +7359,9 @@ a.text-success-glassy:hover, a.text-success-glassy:focus {
 .font700 {
   font-family: 'NunitoSans-Bold', sans-serif; }
 
+.asterisk {
+  vertical-align: 0.3rem; }
+
 /*
  * General 
  */
@@ -7594,6 +7597,10 @@ footer {
     margin-bottom: 0.75rem; } }
 @media (max-width: 1199.98px) {
   .footer-discount {
-    width: 100%; } }
+    width: 100%; }
+
+  .asterisk {
+    display: block;
+    padding-bottom: 0.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
