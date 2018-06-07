@@ -7402,7 +7402,7 @@ img {
 header {
   position: relative;
   height: 100%;
-  overflow: hidden; }
+  overflow: auto; }
   header .header-media {
     height: 100%;
     overflow: hidden; }
@@ -7416,7 +7416,7 @@ header {
     left: 0;
     width: 100vw;
     background: rgba(190, 30, 45, 0.7);
-    z-index: 1100; }
+    z-index: 1200; }
   header .header-title {
     text-align: center;
     position: absolute;
@@ -7580,11 +7580,9 @@ footer {
   header .navbar {
     background: #be1e2d; }
 
-  .dropdown-1 {
-    transform: translateY(0); }
-
-  .dropdown-2 {
-    transform: translateY(0); }
+  .dropdown-1, .dropdown-2 {
+    transform: translateY(0);
+    box-shadow: none; }
 
   .cart-item, .currency-item {
     border-right: 0; }

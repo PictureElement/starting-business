@@ -234,7 +234,7 @@ img {
 header {
   position: relative;
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
   .header-media {
     height: 100%;
     overflow: hidden;
@@ -250,7 +250,7 @@ header {
     left: 0;
     width: 100vw;
     background: map-get($theme-colors, primary-glassy);
-    z-index: 1100;
+    z-index: 1200;
   }
   .header-title {
     text-align: center;
@@ -471,11 +471,9 @@ footer {
       background: map-get($theme-colors, primary);
     }
   }
-  .dropdown-1 {
+  .dropdown-1, .dropdown-2 {
     transform:translateY(0);
-  }
-  .dropdown-2 {
-    transform:translateY(0);
+    box-shadow: none;
   }
   .cart-item, .currency-item {
     border-right: 0;
