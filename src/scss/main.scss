@@ -487,3 +487,10 @@ footer {
     margin-bottom: 0.75rem;
   }
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+  .footer-discount {
+    width: 100%;
+  }
+}

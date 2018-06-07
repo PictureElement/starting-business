@@ -7594,5 +7594,8 @@ footer {
 
   .card-deck .card {
     margin-bottom: 0.75rem; } }
+@media (max-width: 1199.98px) {
+  .footer-discount {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
